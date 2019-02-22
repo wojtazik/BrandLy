@@ -1,0 +1,50 @@
+.header-carousel{
+    height: 100%;
+
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;                         /* 3 */
+        transform: translate(-50%, -25%);
+        width: 80%;
+
+        
+    }
+}
+.header-carousel__caption > *{
+    text-transform: uppercase;
+    word-wrap: nowrap;
+}
+.header-carousel__caption > *:not(:last-child){
+    margin-bottom: 2rem;
+}
+.header-carousel__caption > *:first-child{
+    letter-spacing: 3px;
+}
+
+.carousel-item--header{
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+
+    .bg1{
+        background-image: url(../img/header-bg-1.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bg2{
+        background-image: url(../img/header-bg-2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bg3{
+        background-image: url(../img/header-bg-3.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bg4{
+        background-image: url(../img/header-bg-4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }

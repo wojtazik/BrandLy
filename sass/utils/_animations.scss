@@ -1,0 +1,51 @@
+@keyframes moveArrowToRight{
+    0%{
+        transform: translateX(0);
+    }
+    60%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveArrowToLeft{
+    0%{
+        transform: translateX(0);
+    }
+    60%{
+        transform: translateX(-15px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes underline {
+    0%{
+        width: 0;
+    }
+
+    70%{
+        width: 90%;
+    }
+    100%{
+
+        width: 100%;
+    }
+}
+
+@keyframes animateOutline{
+    0%{
+        outline: rgba(0,0,0,1) solid 1px;
+        outline-offset: 0px
+    }
+    100%{
+        outline: rgba(0,0,0,0) solid 1px;
+        outline-offset: 8px
+    }
+
+}

@@ -1,0 +1,17 @@
+.section{
+    &__title-wrapper{
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+        height: 5rem;
+    }
+    &__title{
+        font-size: 2.7rem;
+        font-style: italic;
+        color: $color-section-title;
+        line-height: 5rem;
+        font-weight: 100;
+        position: relative;
+            @include makeLines($color-logo, 40%); 
+    }
+}

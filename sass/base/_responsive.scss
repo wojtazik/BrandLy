@@ -1,0 +1,36 @@
+.carousel-caption{
+    @media screen and(max-width: $bp-sm){
+        display: block !important;
+        top: 35% !important;
+    }
+}
+
+.shop-item__wrapper{
+    @media screen and(max-width: $bp-lg){
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    @media screen and(max-width: $bp-sm){
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+}
+
+
+.subscribe__label{
+    @media screen and (max-width: $bp-sm){
+        margin-bottom: 3rem !important;
+    }
+}
+
+.btn--subscribe{
+    @media screen and (max-width: $bp-sm){
+        margin-bottom: 2rem;
+    }
+}
+
+.header__top{
+    @media screen and (max-width: $bp-sm){
+        width: 100vw;
+    }
+}

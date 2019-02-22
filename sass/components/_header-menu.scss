@@ -1,0 +1,30 @@
+.header{
+
+    &__menulist{
+        list-style-type: none;
+    }
+
+    &__menuitem{
+        //line-height: 5rem;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        position: relative;
+
+        &:hover::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -.3rem;
+            width: 0;
+            height: 1px;
+            background-color: $color-logo;
+            animation: underline .5s forwards;
+        } 
+    }
+
+
+    &__menuitem:not(:last-child){
+        margin-right: 7rem;
+    }
+}

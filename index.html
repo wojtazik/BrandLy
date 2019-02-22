@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+	<title>Brandly - Weekly WebDev Challenge #24</title>
+	<meta charset="utf-8">
+	<meta lang="en-EN">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+</head>
+<body>
+
+	<header class="container-fluid nopadding header">
+		<div class="row header__top d-flex flex-md-row flex-column justify-content-md-around justify-content-center nopadding align-items-center">
+			<span class="header__logo">brand<span>ly</span></span>
+			<nav class="header__menu">
+				<ul class="header__menulist d-md-flex flex-row d-none">
+					<li class="header__menuitem">Home</li>
+					<li class="header__menuitem">Shop</li>
+					<li class="header__menuitem">Brands</li>
+					<li class="header__menuitem">Blog</li>
+					<li class="header__menuitem">About</li>
+					<li class="header__menuitem">Contact</li>
+				</ul>
+			</nav>
+			
+			<span class="hamburger__icon d-block d-md-none">&nbsp;</span>
+
+			<div class="col-12 flex-column align-items-center justify-content-center hamburger__menu" id="hamburgerM">
+				<a class="hamburger__menuitem" href="#">Home</a>
+				<a class="hamburger__menuitem" href="#">Shop</a>
+				<a class="hamburger__menuitem" href="#">Brands</a>
+				<a class="hamburger__menuitem" href="#">Blog</a>
+				<a class="hamburger__menuitem" href="#">About</a>
+				<a class="hamburger__menuitem" href="#">Contact</a>
+			</div>
+  			
+		</div>
+		<div id="carouselExampleIndicators" class="carousel slide row nopadding header-carousel" data-ride="carousel">
+				<ol class="carousel-indicators no-mb">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+						<div class="carousel-item carousel-item--header active bg1">
+								<div class="carousel-caption header-carousel__caption d-none d-md-block">
+									<h2 class="display-5 font-weight-light">spring / summer collection</h2>
+									<h1 class="display-3 font-weight-bold">up to 60% discount on new arrivals</h1>
+									<h2 class="display-5 font-weight-light">trending new items, from creators around the world</h2>
+									<button class="btn btn--white">shop now</button>
+								</div>
+							</div>
+							<div class="carousel-item carousel-item--header  bg2">
+									<div class="carousel-caption header-carousel__caption d-none d-md-block">
+											<h2 class="display-5 font-weight-light">spring / summer collection</h2>
+											<h1 class="display-3 font-weight-bold">up to 60% discount on new arrivals</h1>
+											<h2 class="display-5 font-weight-light">trending new items, from creators around the world</h2>
+											<button class="btn btn--white">shop now</button>
+									</div>
+							</div>
+							<div class="carousel-item carousel-item--header  bg3">
+									<div class="carousel-caption header-carousel__caption d-none d-md-block">
+											<h2 class="display-5 font-weight-light">spring / summer collection</h2>
+											<h1 class="display-3 font-weight-bold">up to 60% discount on new arrivals</h1>
+											<h2 class="display-5 font-weight-light">trending new items, from creators around the world</h2>
+											<button class="btn btn--white">shop now</button>
+									</div>
+							</div>
+							<div class="carousel-item carousel-item--header  bg4">
+									<div class="carousel-caption header-carousel__caption d-none d-md-block">
+											<h2 class="display-5 font-weight-light">spring / summer collection</h2>
+											<h1 class="display-3 font-weight-bold">up to 60% discount on new arrivals</h1>
+											<h2 class="display-5 font-weight-light">trending new items, from creators around the world</h2>
+											<button class="btn btn--white">shop now</button>
+									</div>
+							</div>
+				</div>
+				<!--
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+				-->
+			</div>
+	</header>
+	<main>
+		<section class="section__latest container">
+			<div class="row section__title-wrapper d-flex flex-row justify-content-center">
+				<span class="section__title">
+					Latest Products
+				</span>
+			</div>
+			<div class="row latest-categories">
+				<div class="col-sm-12 col-md-4  form-group">
+					<div class="col-margin">
+						<a href="#">	
+							<figure class="latest__item latest__item--1 latest__item--small">
+								<figcaption>Men</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4  form-group">
+					<div class="col-margin">
+						<a href="#">
+							<figure class="latest__item latest__item--2 latest__item--small">
+								<figcaption>Woman</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4  form-group">
+					<div class="col-margin">
+						<a href="#">
+							<figure class="latest__item latest__item--3 latest__item--small">
+								<figcaption>Watches</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6  form-group">
+					<div class="col-margin">
+						<a href="#">
+							<div class="latest__item latest__item--4 latest__item--big text-capitalize">
+									<p>40% off new autumn collection</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6  form-group">
+					<div class="col-margin">
+						<a href="#">
+							<div class="latest__item latest__item--5 latest__item--big text-uppercase">
+								<p>Mega sale on items from spirit collection</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="container-fluid section__trending">
+				<div class="row section__title-wrapper d-flex flex-row justify-content-center">
+					<span class="section__title">
+						Trending items
+					</span>
+				</div>
+
+				<div id="carouselExample" class="carousel slide" data-ride="carousel">
+						
+						<div class="carousel-inner">
+						  <div class="carousel-item active edit-dimensions">
+								<div class="row shop-item__wrapper">
+										<div class="col-md-6 col-sm-12 d-md-flex flex-row justify-content-end">
+											<img src="img/trending-img.png" alt="Elegant Jacket" class="img-fluid img-responsive shop-item__image">
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="shop-item">	
+												<h3 class="item-title">nathan steward jacket</h3>
+												<p class="shop-item__collection">Summer/Autumn Collection</p>
+												<span class="bar">&nbsp;</span>
+												<p class="shop-item__description">Classic Nathan Stewart Jacket from his latest collection.
+													This item is loved by many just because of it’s simle style.
+													Simple lines,lovely texture,it suits almost everybody. 
+													It comes in six different colors,and all sizes.
+												</p>
+												<p class="shop-item__tip">
+													FASHION TIP:<br>
+													With this jacket,Nathan Stewart sunglasses go hand in hand!
+												</p>
+												<div class="shop-item__buttons">
+													<div class="shop-item__button-group d-flex flex-row justify-content-between">
+																<button class="btn btn--black shop-item__btn size-btn">M</button>
+																<button class="btn btn--black shop-item__btn size-btn">L</button>
+																<button class="btn btn--black shop-item__btn size-btn">XL</button>
+																<button class="btn btn--black shop-item__btn size-btn">XXL</button>
+													</div>
+													<div class="shop-item__button-group d-flex flex-row justify-content-between">
+														<button class="btn btn--black shop-item__btn shop-item__btn--long">SHOP NOW</button>
+														<button class="btn btn--black shop-item__btn shop-item__btn--long">SIZE GUIDE</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+						  </div>
+						  <div class="carousel-item edit-dimensions">
+								<div class="row shop-item__wrapper">
+										<div class="col-md-6 col-sm-12 d-md-flex flex-row justify-content-end">
+											<img src="img/trending-img.png" alt="Elegant Jacket" class="img-fluid img-responsive shop-item__image">
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="shop-item">	
+												<h3 class="item-title">nathan steward jacket</h3>
+												<p class="shop-item__collection">Summer/Autumn Collection</p>
+												<span class="bar">&nbsp;</span>
+												<p class="shop-item__description">Classic Nathan Stewart Jacket from his latest collection.
+													This item is loved by many just because of it’s simle style.
+													Simple lines,lovely texture,it suits almost everybody. 
+													It comes in six different colors,and all sizes.
+												</p>
+												<p class="shop-item__tip">
+													FASHION TIP:<br>
+													With this jacket,Nathan Stewart sunglasses go hand in hand!
+												</p>
+												<div class="shop-item__buttons">
+													<div class="shop-item__button-group d-flex flex-row justify-content-between">
+																<button class="btn btn--black shop-item__btn size-btn">M</button>
+																<button class="btn btn--black shop-item__btn size-btn">L</button>
+																<button class="btn btn--black shop-item__btn size-btn">XL</button>
+																<button class="btn btn--black shop-item__btn size-btn">XXL</button>
+													</div>
+													<div class="shop-item__button-group d-flex flex-row justify-content-between">
+														<button class="btn btn--black shop-item__btn shop-item__btn--long">SHOP NOW</button>
+														<button class="btn btn--black shop-item__btn shop-item__btn--long">SIZE GUIDE</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+						  </div>
+						  <div class="carousel-item edit-dimensions">
+								<div class="row shop-item__wrapper">
+										<div class="col-md-6 col-sm-12 d-md-flex flex-row justify-content-end">
+											<img src="img/trending-img.png" alt="Elegant Jacket" class="img-fluid img-responsive shop-item__image">
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="shop-item">	
+												<h3 class="item-title">nathan steward jacket</h3>
+												<p class="shop-item__collection">Summer/Autumn Collection</p>
+												<span class="bar">&nbsp;</span>
+												<p class="shop-item__description">Classic Nathan Stewart Jacket from his latest collection.
+													This item is loved by many just because of it’s simle style.
+													Simple lines,lovely texture,it suits almost everybody. 
+													It comes in six different colors,and all sizes.
+												</p>
+												<p class="shop-item__tip">
+													FASHION TIP:<br>
+													With this jacket,Nathan Stewart sunglasses go hand in hand!
+												</p>
+												<div class="shop-item__buttons">
+													<div class="shop-item__button-group d-flex flex-row justify-content-between">
+																<button class="btn btn--black shop-item__btn size-btn">M</button>
+																<button class="btn btn--black shop-item__btn size-btn">L</button>
+																<button class="btn btn--black shop-item__btn size-btn">XL</button>
+																<button class="btn btn--black shop-item__btn size-btn">XXL</button>
+													</div>
+													<div class="shop-item__button-group d-flex flex-row justify-content-between">
+														<button class="btn btn--black shop-item__btn shop-item__btn--long">SHOP NOW</button>
+														<button class="btn btn--black shop-item__btn shop-item__btn--long">SIZE GUIDE</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+						  </div>
+						</div>
+						<ol class="carousel-indicators trending__carousel-indicators no-absolute d-flex flex-row justify-content-center align-items-center">
+							<li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExample" data-slide-to="1"></li>
+							<li data-target="#carouselExample" data-slide-to="2"></li>
+						</ol>
+					</div>
+		</section>
+
+		<section class="section__blog container">
+
+			<div class="row section__title-wrapper d-flex flex-row justify-content-center">
+				<span class="section__title">
+					From the blog
+				</span>
+			</div>
+
+			<button class="arrow arrow-right" id="next-slide"><i class="fas fa-arrow-right"></i></button>
+			<button class="arrow arrow-left" id="prev-slide"><i class="fas fa-arrow-left"></i></button>
+
+			<div class="row jsSlider">
+				
+				<div class="col-12 col-md-6">
+					<div class="card blog-post" style="width: 18rem;">
+						<img class="card-img-top" src="img/blog-img-1.png" alt="Blog post image">
+						<div class="card-body">
+							<h3 class="card-title item-title">GERMAN FASHION WIZARDS</h3>
+							<span class="blog-post__author">By James Steed<span class="vertical-bar">|</span>Fashion</span>
+							<p class="card-text blog-post__text">This week we had the chance of interviewing two creative artists from Germany. These guys 			are simply amazing at what they do with the 
+									European fashion scene and this year at Paris Fashion Week they 
+									introduced their new collection. </p>
+							<a href="#" class="btn btn--black">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="card blog-post" style="width: 18rem;">
+						<img class="card-img-top" src="img/blog-img-2.png" alt="Blog post image">
+						<div class="card-body">
+							<h3 class="card-title item-title">ANNE STEWART’S SUNGLASSES</h3>
+							<span class="blog-post__author">By James Steed<span class="vertical-bar">|</span>Fashion</span>
+							<p class="card-text blog-post__text">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+							<a href="#" class="btn btn--black">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="card blog-post" style="width: 18rem;">
+						<img class="card-img-top" src="img/blog-img-1.png" alt="Blog post image">
+						<div class="card-body">
+							<h3 class="card-title item-title">GERMAN FASHION WIZARDS</h3>
+							<span class="blog-post__author">By James Steed<span class="vertical-bar">|</span>Fashion</span>
+							<p class="card-text blog-post__text">This week we had the chance of interviewing two creative artists from Germany. These guys 			are simply amazing at what they do with the 
+										European fashion scene and this year at Paris Fashion Week they 
+										introduced their new collection. </p>
+							<a href="#" class="btn btn--black">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="card blog-post" style="width: 18rem;">
+						<img class="card-img-top" src="img/blog-img-2.png" alt="Blog post image">
+						<div class="card-body">
+							<h3 class="card-title item-title">ANNE STEWART’S SUNGLASSES</h3>
+							<span class="blog-post__author">By James Steed<span class="vertical-bar">|</span>Fashion</span>
+							<p class="card-text blog-post__text">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+							<a href="#" class="btn btn--black">read more</a>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer container-fluid">
+		<div class="subscribe container">
+			<div class="row">
+				<p class="subscribe__text">subscribe to our newsletter to recive latest news and offers</p>
+			</div>
+					
+			<form action="#" class="row">
+				<label for="email" class="col-12 col-md-8 subscribe__label">
+					<i class="far fa-envelope subscribe__icon"></i>
+					<input type="email" class="subscribe__input" placeholder="EMAIL ADRESS">
+				</label>
+				<input type="submit" id="email" value="SUBSCRIBE" class="col-12 col-md-2 btn btn--subscribe">							
+			</form>
+		</div>
+	</footer>
+
+	<div class="subcaption container-fluid">
+		<div class="row d-flex flex-row justify-content-center align-items-center subcaption__row">
+			<p class="subcaption__author">Made with <i class="fas fa-heart"></i> by WebDonut.net</p>
+		</div>
+	</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</script>
+
+</body>
+</html>

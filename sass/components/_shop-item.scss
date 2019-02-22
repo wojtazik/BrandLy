@@ -1,0 +1,49 @@
+.shop-item{
+
+    margin-left: 1rem;
+    padding-top: 3rem;
+
+    &__wrapper{
+        margin-right: 20rem;
+        margin-left: 20rem;
+
+    }
+    &__image{
+        max-height: 40rem;
+    }
+    
+    &__collection{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        color: $color-text-gray;
+        font-weight: 300;
+    }
+    &__description{
+        color: $color-text-gray;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-right: 10%;
+        letter-spacing: 1px;
+    }
+    &__tip{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+        color: $color-text-gray;
+    }
+    &__button-group{
+        margin-right: 40%;
+
+        padding-bottom: 1.5rem;
+    }
+    &__btn{
+        padding: 1rem 1.5rem;
+
+        &--long{
+            padding: 1rem 4rem;
+        }
+    }
+
+    
+}

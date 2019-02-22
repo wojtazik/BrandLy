@@ -1,0 +1,16 @@
+.subcaption{
+
+    &__row{
+        height: 10rem;
+    }
+
+    &__author{
+        color: $color-text-gray;
+        font-size: 1.4rem;
+
+        & > *{
+            color: $color-logo;
+        }
+    }
+
+}

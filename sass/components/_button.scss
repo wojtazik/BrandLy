@@ -1,0 +1,43 @@
+.btn{
+    padding: 1rem 3rem;
+    outline: none;
+    text-transform: uppercase;
+    
+
+    &:hover,
+    &:focus{
+        animation: animateOutline .8s linear infinite;
+    }
+
+    &--white{
+        border: 2px solid white;
+        color: white;
+
+        &:hover{
+            color: white;
+        }
+    }
+    &--black{
+        border: 2px solid black;
+        color: black;
+
+        &:hover{
+            color: black;
+        }
+    }
+
+    &--subscribe{
+        text-align: center;
+        background-color: white;
+        border-radius: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+.btn:active{
+    outline: none !important;
+}
+.btn:focus{
+    outline: none !important;
+}

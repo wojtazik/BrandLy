@@ -1,0 +1,12 @@
+.section__trending{
+    background-image: url(../img/trending-bg.png);
+    background-size: cover;
+}
+
+.trending__carousel-indicators li{
+    background-color: rgba(54, 53, 53, 0.945);
+}
+.trending__carousel-indicators li.active{
+    background-color: transparent;
+    border: 2px solid $color-logo;
+}

@@ -1,0 +1,138 @@
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .no-mb{
+     margin-bottom: 0 !important;
+ }
+
+ .img-100vh{
+     width: 100vw;
+     height: auto;
+ }
+
+
+ .carousel-indicators li {
+     border-radius: 50% !important;
+     width: 10px !important;
+     height: 10px !important;     
+ }
+
+ @mixin makeLines($color, $width){
+     &::before,
+     &::after{
+        content: "";
+        width: $width;
+        height: 2px;
+        background-color: $color;
+        position: absolute;
+        transform: translateX(-50%);
+        transition: width .2s linear;
+    }
+     &::before{
+        left: 50%;
+        top: calc(-5% -2px);
+    }
+     &::after{
+        left: 50%;
+        bottom: calc(-5% -2px);
+    }
+        
+}
+
+.bar{
+    width: 3rem;
+    height: 1px;
+    background-color: $color-text-gray;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.carousel-item{
+    height: auto !important;
+}
+
+.edit-dimensions {
+    height: auto !important;
+    width: 100vw !important;
+}
+
+.no-absolute{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.btn-toggler{
+    color: white !important;
+    background-color: black;
+}
+
+.item-title{
+        font-size: 2rem;
+        color: $color-logo;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align-last: left;
+        padding-bottom: .7rem;
+}
+
+.vertical-bar{
+    height: 100%;
+    color: $color-text-gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.arrow{
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    line-height: 4rem;
+    opacity: .3;
+    cursor: pointer;
+
+    &:hover{
+        opacity: .4;
+    }
+}
+.arrow:focus{
+    border: none;
+    outline: none;
+}
+.arrow-left{
+    left: -10%;
+    top: 45%;
+    
+    &:hover{
+        animation: moveArrowToLeft 1s linear infinite;
+    }
+}
+.arrow-right{
+    right: -10%;
+    top: 45%;
+    &:hover{
+        animation: moveArrowToRight 1s linear infinite;
+    }
+    
+}
+
+.bgdark{
+    background-color: rgba(0,0,0,.85);
+}
+
+
+
+
+
+
+
+
+
+

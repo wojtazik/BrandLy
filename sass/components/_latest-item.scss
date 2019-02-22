@@ -1,0 +1,115 @@
+.latest__item{
+
+    height: 35rem;
+    background-size: cover;
+    text-align: center;
+    line-height: 35rem;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 300;
+    border-radius: 3px;
+    box-shadow: 10px 10px 56px -15px rgba(0,0,0,0.61);
+
+    &--big{
+        font-size: 3.5rem;
+        font-weight: 600;
+        position: relative;
+    }
+}
+.latest__item--small{
+    font-style: italic;
+}
+
+.latest__item--big p {
+    position: absolute;
+    top: 50%;
+    left: 50%;                         /* 3 */
+    transform: translate(-50%, -50%);
+    line-height: 5rem;
+    min-width: 60%;
+}
+.latest__item--big p::before,
+.latest__item--big p::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: width .2s linear;
+}
+.latest__item--big p::before{
+    left: 50%;
+    top: -5%;
+}
+.latest__item--big p::after{
+    left: 50%;
+    bottom: -5%;
+}
+
+.latest__item--big:hover p::before,
+.latest__item--big:hover p::after{
+    width: 60%;
+}
+
+
+@for $i from 1 through 5 {
+
+    .latest__item--#{$i} {
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/latest-img-#{$i}.png');
+
+      &:hover{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/latest-img-#{$i}.png');
+      }
+    }  
+}
+
+
+
+
+.latest__item--small figcaption::before,
+.latest__item--small figcaption::after {
+	position: absolute;
+	content: '';
+    opacity: 0;
+}
+
+.latest__item--small figcaption::before {
+	top: 50px;
+	right: 30px;
+	bottom: 50px;
+	left: 30px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.latest__item--small figcaption::after {
+	top: 30px;
+	right: 50px;
+	bottom: 30px;
+	left: 50px;
+	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+
+.latest__item--small figcaption::before,
+.latest__item--small figcaption::after{
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.latest__item--small:hover figcaption::before,
+.latest__item--small:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
