@@ -9,6 +9,7 @@
         top: 2rem;
         display: block;
         cursor: pointer;
+        transition: all .3s linear;
 
         &:before,
         &:after{
@@ -68,6 +69,19 @@
             animation: underline .5s forwards;
         } 
     }
+}
 
+.H-active{
+    background-color: red;
 
+    &:before{
+        top: 50%;      
+        transform-origin: 50% 50%;
+        transform: rotate(45deg);
+    }
+    &:after{
+        top: 50%;       
+        transform-origin: 50% 50%;
+        transform: rotate(-45deg);        
+    }
 }

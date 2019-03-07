@@ -34,3 +34,8 @@
         width: 100vw;
     }
 }
+.arrow{
+    @media screen and (max-width: $bp-sm){
+        display: none !important;
+    }
+}

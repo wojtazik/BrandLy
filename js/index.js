@@ -29,12 +29,16 @@ $(function(){
     
     $("#hamburgerM").toggleClass("hamburger__menu--active");
     $(".header__top").toggleClass("bgdark");
+    $(".hamburger__icon").toggleClass("H-active");
   });
   $(".hamburger__menuitem").on("click", function(){
     $("#hamburgerM").hasClass("hamburger__menu--active") ? $("#hamburgerM").fadeOut(): $("#hamburgerM").hide().fadeIn() ;
     
     $("#hamburgerM").toggleClass("hamburger__menu--active");
     $(".header__top").toggleClass("bgdark");
+    $(".hamburger__icon").toggleClass("H-active");
   });
+
+  
 
 })
